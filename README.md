@@ -18,10 +18,10 @@ if you don't use WP, just include all scripts in the js folder to your homepage 
 
 ```
     <script src="style/cal.css"></script>
-	<script> src="js/uriBuilder.js" </script>
-	<script> src="js/divBuilder.js" </script>
-	<script> src="js/calendar.js" </script>
-	<script> src="js/main.js" </script>
+	<script src="js/uriBuilder.js"></script>
+	<script src="js/divBuilder.js"></script>
+	<script src="js/calendar.js"></script>
+	<script src="js/main.js"></script>
 	<script> load(yourApiKey, yourCalendarId, divId, themeing); </script>
 
 ```
