@@ -8,6 +8,8 @@ class Calendar{
 		uriBuilder.addPath("events");
 		uriBuilder.addQuery("key",apikey);
 		uriBuilder.addQuery("timeMin", new Date().toJSON());
+		uriBuilder.addQuery("singleEvents","true");
+		uriBuilder.addQuery("orderBy","startTime");
 		var url = uriBuilder.build();
 
 		return url;

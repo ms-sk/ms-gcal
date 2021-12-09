@@ -1,12 +1,37 @@
 :root{
 	--primary: #528DE2;
-	--secondary:  #121212;
+	--secondary: #818cab;
+    --font: #161625;
+    --bg: #FFFFFF;
+    --heading: #FFFFFF;
+
+    --radius: 10px;
+	--font-size: 14px;
+	--header-size: 16px;
+	--container-width: 250px;
+	--container-height: 350px;
+}
+
+[data-theme="orange"]{
+    --primary: #f57c00;
+    --secondary: #818cab;
+    --font: #ffffff;
+    --bg: #37474f;
+    --heading: #ffffff;
+}
+
+[data-theme="dark"] {
+    --primary: #9A97F3;
+    --secondary: #818cab;
+    --font: #e1e1ff;
+    --bg: #161625;
+    --heading: #e1e1ff;
 }
 
 .ms-cal-container{
-	background-color: white;
-	width: 400px;
-	height: 350px;
+	background-color: var(--bg);
+	width: var(--container-width);
+	height: var(--container-height);
 	border: 1px solid;
 	overflow: auto;
 	border-color: var(--secondary);
@@ -16,9 +41,10 @@
 	background-color: var(--primary);
 	font-weight: bold;
 	margin: 5px;
-	border-radius: 10px;
+	border-radius: var(--radius);
 	padding-left: 3px;
-	color: white;
+	color: var(--heading);
+	font-size: var(--font-size);
 }
 
 .ms-cal-item{
@@ -26,9 +52,13 @@
 	border: var(--secondary);
 	border-bottom: 1px solid;
 	border-color: var(--secondary);
+	color: var(--font);
+	font-size: var(--font-size);
 }
 
 .ms-cal-no-events{
 	margin-left: 5px;
 	font-weight: bold;
+	color: var(--font);
+	font-size: var(--font-size);
 }

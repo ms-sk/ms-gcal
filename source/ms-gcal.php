@@ -36,10 +36,11 @@ function ms_cal_lv($attr) {
     $a = shortcode_atts( array(
         'apikey' => 'AIzaSyARemaTKFpdMdOQWmuAJXAr8jToBO2qark',
         'calendarid' => 'ms.sk.git@gmail.com',
+        'theme' => ''
     ), $attr );
 
     $script = "<div id='$randdiv'></div>
-    <script>load(\"{$a['apikey']}\",\"{$a['calendarid']}\",\"$randdiv\");</script>";
+    <script>load(\"{$a['apikey']}\",\"{$a['calendarid']}\",\"$randdiv\",\"{$a['theme']}\");</script>";
 
     return $script;
 }
