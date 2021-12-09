@@ -42,6 +42,6 @@ if you don't use WP, just include all scripts in the js folder to your homepage 
 	</li>
 </ul>
 
-## Theming / Style
+## Theming
 
-To apply your own style feel free add it to the style/cal.css file located in the source directory. If you want to have your own style added to the plugin, feel free to create a pull request.
+To apply your own style feel free add it to the style folder located in the source directory. If you want to have your own style added to the plugin, feel free to create a pull request.

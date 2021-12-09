@@ -10,6 +10,20 @@
 	--header-size: 16px;
 	--container-width: 250px;
 	--container-height: 350px;
+
+    --date-padding: 3px;
+}
+
+[data-theme="card"]{
+    --primary: #ffffff;
+    --secondary: #ffffff00;
+    --font: #161625;
+    --bg: #ffffff;
+    --heading: #161625;
+
+    --shadow: 5px 5px 3px 0px rgba(0,0,0,0.3);
+    --card-margin: 10px;
+    --date-padding: 0px;
 }
 
 [data-theme="orange"]{
@@ -28,6 +42,12 @@
     --heading: #e1e1ff;
 }
 
+.ms-cal-card{
+	background-color: var(--bg);
+	box-shadow: var(--shadow);
+	margin: var(--card-margin);
+}
+
 .ms-cal-container{
 	background-color: var(--bg);
 	width: var(--container-width);
@@ -42,7 +62,7 @@
 	font-weight: bold;
 	margin: 5px;
 	border-radius: var(--radius);
-	padding-left: 3px;
+	padding-left: var(--date-padding);
 	color: var(--heading);
 	font-size: var(--font-size);
 }
