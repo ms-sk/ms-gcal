@@ -35,7 +35,7 @@ function ms_cal_lv($attr) {
 
     $a = shortcode_atts( array(
         'apikey' => 'AIzaSyARemaTKFpdMdOQWmuAJXAr8jToBO2qark',
-        'calendarid' => 'ms.sk.git@gmail.com',
+        'calendarid' => 'r5d96g85bgnhblj6ima84josi4@group.calendar.google.com',
         'theme' => ''
     ), $attr );
 
