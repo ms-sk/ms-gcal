@@ -1,6 +1,11 @@
 # ms-gcal
 Import a public google calendar into a homepage.
 
+## Images
+
+<img src="./images/example.png" alt="Example Image"/>
+<img src="./images/example1.png" alt="Example Image"/>
+
 ## Examples
 
 To add the calendar to your WP page, use the following shortcut.
@@ -18,7 +23,9 @@ if you don't use WP, just include all scripts in the js folder to your homepage 
 	<script> src="js/calendar.js" </script>
 	<script> src="js/main.js" </script>
 	<script> load(yourApiKey, yourCalendarId, divId, themeing); </script>
+
 ```
+
 
 ## Parameters
 
@@ -34,3 +41,7 @@ if you don't use WP, just include all scripts in the js folder to your homepage 
 		</ul>
 	</li>
 </ul>
+
+## Theming / Style
+
+To apply your own style feel free add it to the style/cal.css file located in the source directory. If you want to have your own style added to the plugin, feel free to create a pull request.

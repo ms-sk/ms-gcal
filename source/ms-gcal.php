@@ -31,7 +31,7 @@ add_action( 'wp_enqueue_scripts', 'ms_gcal_enqueue_scripts' );
 
 function ms_cal_lv($attr) {
 
-    $randdiv = 'a'.substr(md5(microtime()),rand(0,26),10);
+    $randdiv = 'ms-gcal'.substr(md5(microtime()),rand(0,26),10);
 
     $a = shortcode_atts( array(
         'apikey' => 'AIzaSyARemaTKFpdMdOQWmuAJXAr8jToBO2qark',
