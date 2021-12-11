@@ -3,9 +3,9 @@
  * @package ms-gcal
  */
 /*
-Plugin Name: ms-sk Google Calendar
+Plugin Name: ms-sk Calendar for public Google Calendars
 Plugin URI: https://github.com/ms-sk/ms-gcal
-Description: Public google calendar integration in wp via shorcut.
+Description: Public list visualization google calendar integration in wordpress via shorcut.
 Version: 2.1.40
 Author: ms-sk
 Author URI: https://github.com/ms-sk
