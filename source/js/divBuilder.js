@@ -7,7 +7,7 @@ class DivBuilder{
 	addItem(item){
 		this.items.push(item);
 	}
-	
+
 	build(){
 		var parent = document.createElement("div");
 		parent.classList.add("ms-cal-container")

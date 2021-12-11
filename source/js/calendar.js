@@ -2,7 +2,6 @@ class Calendar{
 
 	buildUrl(apikey, calendarId){
 		var uriBuilder = new UriBuilder();
-		var uri = uriBuilder;
 		uriBuilder.setRoot("https://www.googleapis.com/calendar/v3/calendars");
 		uriBuilder.addPath(calendarId);
 		uriBuilder.addPath("events");
@@ -24,13 +23,13 @@ class Calendar{
 	async get(apikey, calendarId, callback){
 
 		var url = this.buildUrl(apikey, calendarId);
+		const request = new XMLHttpRequest();
 
-	    const request = new XMLHttpRequest();
-	    request.onload = function(){
-	    	var response = JSON.parse(request.response);
-	    	callback(response);
-	    }
-	    request.open("GET", url);
-	    request.send();
+		request.onload = function(){
+			var response = JSON.parse(request.response);
+			callback(response);
+		}
+		request.open("GET", url);
+		request.send();
 	}
 }

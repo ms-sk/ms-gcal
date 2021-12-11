@@ -1,5 +1,6 @@
 
 class UriBuilder{
+
 	constructor(){
 		this.root = "";
 		this.paths = [];
@@ -20,23 +21,23 @@ class UriBuilder{
 
 	buildPath(buildPaths){
 		var value = "";
-	    for(let i = 0; i < buildPaths.length; i++){
-	    	value += "/" + buildPaths[i];
-	    }
+		for(let i = 0; i < buildPaths.length; i++){
+			value += "/" + buildPaths[i];
+		}
 
-	    return value;
+		return value;
 	}
 
 	buildQuery(buildQueries){
 		var value = "?";
-		var cnt = 0;
+		var count = 0;
 		for(var key in buildQueries){
-			if(cnt != 0){
+			if(count != 0){
 				value += "&";
 			}
 
 			value += key + "=" + this.queries[key];
-			cnt= cnt+1;
+			count = count+1;
 		}
 
 		return value;
