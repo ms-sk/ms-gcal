@@ -8,7 +8,22 @@ class DivBuilder{
 		this.items.push(item);
 	}
 
+	addError(error){
+		this.error = error;
+	}
+
+	buildError(error){
+		var div = document.createElement("div");
+		div.classList.add("ms-error");
+		div.innerHTML = "Error " + error.code + " " + error.message + " " + error.status;
+		return div;
+	}
+
 	build(){
+		if(this.error != undefined){
+			return this.buildError(this.error);
+		}
+
 		var parent = document.createElement("div");
 		parent.classList.add("ms-cal-container")
 
