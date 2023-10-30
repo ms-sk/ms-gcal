@@ -3,8 +3,8 @@ Import a public google calendar into a homepage.
 
 ## Images
 
-<img src="./images/example.png" alt="Example Image"/>
-<img src="./images/example1.png" alt="Example Image"/>
+<img src="./assets/screenshot-1.png" alt="Example Image"/>
+<img src="./assets/screenshot-2.png" alt="Example Image"/>
 
 ## Examples
 
